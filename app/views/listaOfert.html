@@ -1,4 +1,17 @@
 <h1>Lista ofert</h1>
-<ul>
-  <li ng-repeat="ofertElement in ofert">{{ofertElement.name}}</li>
-</ul>
+<table>
+  <tr>
+    <th>Nazwa produktu</th>
+    <th>Cena</th>
+    <th>link</th>
+    <th>Ilość</th>
+    <th>Stan</th>
+  </tr>
+  <tr ng-repeat="ofertElement in ofert">
+    <td>{{ofertElement.name}}</td>
+    <td>{{ofertElement.price}}</td>
+    <td>{{ofertElement.link}}</td>
+    <td>{{ofertElement.amount}}</td>
+    <td>{{ofertElement.status}}</td>
+  </tr>
+</table>
