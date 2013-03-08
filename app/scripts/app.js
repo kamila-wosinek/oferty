@@ -11,6 +11,10 @@ var ofertyApp = angular.module('ofertyApp', [])
         templateUrl: 'views/dodajOferty.html',
         controller: 'DodajOfertyCtrl'
       })
+      .when('/listaOfert', {
+        templateUrl: 'views/listaOfert.html',
+        controller: 'ListaOfertCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
