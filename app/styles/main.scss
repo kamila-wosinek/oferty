@@ -29,6 +29,9 @@ $fontSize: 90%;
      color: $mainBgColor;
      @include border-radius(30px 30px 30px 30px);
      @include background(linear-gradient(top, $buttonColor, #9da500));
+     border: none;
+     padding: 1%;
+     cursor: pointer;
 }
 
 html{
@@ -54,6 +57,9 @@ html{
        a{
           color: $linkColor;
        }
+       button{
+        @include button;
+       }
        table{
          border: 2px solid $buttonColor;
          width: 100%;
@@ -71,8 +77,6 @@ html{
           margin-top: 20px;
           @include button;
           @include right;
-          padding: 1%;
-
        }
     }
 }
