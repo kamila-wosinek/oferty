@@ -1,25 +1,45 @@
+<h1>Lista ofert</h1>
+<table>
+  <tr>
+    <th> </th>
+    <th>Nazwa produktu</th>
+    <th>Cena</th>
+    <th>link</th>
+    <th>Ilość</th>
+    <th>Stan</th>
+  </tr>
+  <tr ng-repeat="ofertElement in ofertList">
+    <td><input type="checkbox" /></td>
+    <td >{{ofertElement.name}}</td>
+    <td>{{ofertElement.price}}</td>
+    <td>{{ofertElement.link}}</td>
+    <td>{{ofertElement.amount}}</td>
+    <td>{{ofertElement.status}}</td>
+  </tr>
+</table>
+<input type="submit" ng-submit="delLine()"  class="usun" value="Usuń zaznaczone" />
+
 <h1>Dodaj ofertę</h1>
 <form>
   <p>
-   <label for="name">Nazwa oferty:</label>
-   <input name="name" ng-model="ofert.name"  placeholder="Wpisz nazwę" />
-   </p>
-   <p>
-   <label for="price">Cena:</label>
-   <input name="price" ng-model="ofert.price"  placeholder="Podaj cenę" />
-   </p>
-   <p>
-   <label for="link">Link:</label>
-   <input name="link" ng-model="ofert.link"  placeholder="Podaj link do oferty" />
-   </p>
-   <p>
-   <label for="amount">Ilość:</label>
-   <input name="amount" ng-model="ofert.amount"  placeholder="szt" />
-   </p>
-   <p>
-   <label for="status">Stan produktu:</label>
-   <input name="status" ng-model="ofert.status"  placeholder="Bd" />
-   </p>
-   <button ng-click="add()">Zapisz</button>
-   {{ofert}}
- </form>
+    <label for="name">Nazwa oferty:</label>
+    <input name="name" ng-model="ofert.name"  placeholder="Wpisz nazwę" />
+  </p>
+  <p>
+    <label for="price">Cena:</label>
+    <input name="price" ng-model="ofert.price"  placeholder="Podaj cenę" />
+  </p>
+  <p>
+    <label for="link">Link:</label>
+    <input name="link" ng-model="ofert.link"  placeholder="Podaj link do oferty" />
+  </p>
+  <p>
+    <label for="amount">Ilość:</label>
+    <input name="amount" ng-model="ofert.amount"  placeholder="szt" />
+  </p>
+  <p>
+    <label for="status">Stan produktu:</label>
+    <input name="status" ng-model="ofert.status"  placeholder="Bd" />
+  </p>
+  <button ng-click="add()">Zapisz</button>
+</form>
