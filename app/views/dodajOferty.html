@@ -14,12 +14,12 @@
    </p>
    <p>
    <label for="amount">Ilość:</label>
-   <input name="status" ng-model="ofert.status"  placeholder="szt" />
+   <input name="amount" ng-model="ofert.amount"  placeholder="szt" />
    </p>
    <p>
    <label for="status">Stan produktu:</label>
    <input name="status" ng-model="ofert.status"  placeholder="Bd" />
    </p>
-   <button>Zapisz</button>
+   <button ng-click="add()">Zapisz</button>
    {{ofert}}
  </form>
