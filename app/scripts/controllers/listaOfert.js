@@ -12,3 +12,5 @@ ofertyApp.controller('ListaOfertCtrl', function($scope) {
     {"name":"Test8","price":"Test","link":"Test","status":"Test"}
   ];
 });
+
+

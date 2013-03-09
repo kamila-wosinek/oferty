@@ -1,6 +1,7 @@
 <h1>Lista ofert</h1>
 <table>
   <tr>
+    <th> </th>
     <th>Nazwa produktu</th>
     <th>Cena</th>
     <th>link</th>
@@ -8,10 +9,12 @@
     <th>Stan</th>
   </tr>
   <tr ng-repeat="ofertElement in ofert">
-    <td>{{ofertElement.name}}</td>
+    <td><input type="checkbox" /></td>
+    <td >{{ofertElement.name}}</td>
     <td>{{ofertElement.price}}</td>
     <td>{{ofertElement.link}}</td>
     <td>{{ofertElement.amount}}</td>
     <td>{{ofertElement.status}}</td>
   </tr>
 </table>
+<input type="submit" ng-submit="delLine()"  class="usun" value="Usuń zaznaczone" />
