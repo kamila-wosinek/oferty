@@ -11,6 +11,11 @@ ofertyApp.controller('DodajOfertyCtrl', function($scope) {
     $scope.ofert = {};
   };
 
+  $scope.delLine = function (index) {
+    $scope.ofertList.splice(index, 1);
+    save();
+  };
+
   var stored = localStorage.getItem('ofertList');
   if (stored) {
     $scope.ofertList = JSON.parse(stored);
