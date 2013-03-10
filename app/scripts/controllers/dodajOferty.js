@@ -1,6 +1,6 @@
 'use strict';
 
-ofertyApp.controller('DodajOfertyCtrl', function($scope) {
+ofertyApp.controller('DodajOfertyCtrl', ['$scope', function($scope) {
   var save = function () {
     localStorage.setItem('ofertList', JSON.stringify($scope.ofertList));
   }
@@ -23,4 +23,4 @@ ofertyApp.controller('DodajOfertyCtrl', function($scope) {
   else {
     $scope.ofertList = [];
   }
-});
+}]);
